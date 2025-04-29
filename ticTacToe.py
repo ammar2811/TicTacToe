@@ -4,7 +4,7 @@ import random
 def next_turn(row, column):
     global player
 
-    if buttons[row][column]['text'] == '' and check_winner() is False:
+    if buttons[row][column]['text'] == "" and check_winner() is False:
        if player == players[0]:
            buttons[row][column]['text'] = player
            if check_winner() is False:
@@ -85,7 +85,7 @@ def empty_spaces():
 def new_game():
     global player
     player = random.choice(players)
-    label.config(text=player + "'s turn")
+    label.config(text=player + " 's turn")
 
     for row in range(3):
         for column in range(3):
